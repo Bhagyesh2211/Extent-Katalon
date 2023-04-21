@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Extent Test Suite,,,,2023-04-21 12:12:40,2023-04-21 12:13:06,25.712s,PASSED
+,,,,,,,
+Test Cases/New Test Case,,,,2023-04-21 12:12:41,2023-04-21 12:13:06,25.103s,PASSED
+execID = getExecutionSourceName(),,,,2023-04-21 12:12:41,2023-04-21 12:12:41,0.004s,PASSED
+extent = com.katalon.plugin.keyword.extentReport.Extent.setupExtentReport(execID),,,,2023-04-21 12:12:41,2023-04-21 12:12:46,5.393s,PASSED
+"tcID = ""Test Case 1""",,,,2023-04-21 12:12:46,2023-04-21 12:12:46,0.002s,PASSED
+"extentTest = com.katalon.plugin.keyword.extentReport.Extent.startExtentTest(tcID, ""Extent Test"", extent)",,,,2023-04-21 12:12:46,2023-04-21 12:12:46,0.002s,PASSED
+driver = startNewBrowser(getExecutedBrowser()),,,,2023-04-21 12:12:46,2023-04-21 12:12:54,7.567s,PASSED
+"extentTest.log(INFO, ""Browser Launched"")",,,,2023-04-21 12:12:54,2023-04-21 12:12:54,0.023s,PASSED
+"baseUrl = ""https://www.google.com""",,,,2023-04-21 12:12:54,2023-04-21 12:12:54,0.001s,PASSED
+"driver.get(baseUrl + ""/"")",,,,2023-04-21 12:12:54,2023-04-21 12:13:02,7.509s,PASSED
+maximizeWindow(),,,,2023-04-21 12:13:02,2023-04-21 12:13:02,0.629s,PASSED
+"takeScreenshot(""Screenshots/"" + ""googleScreenshot.png"")",,,,2023-04-21 12:13:02,2023-04-21 12:13:05,2.720s,PASSED
+"extentTest.log(INFO, ""Snapshot below: "" + extentTest.addScreenCapture(""/Users/bhagyesh/Downloads/integrate_extent_with_katalon-master/Screenshots/googleScreenshot.png""))",,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.035s,PASSED
+"extentTest.log(INFO, ""Navigated to www.google.com"")",,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.010s,PASSED
+title = driver.getTitle(),,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.012s,PASSED
+println(title),,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.016s,PASSED
+"extentTest.log(INFO, ""Get the WebSite title"")",,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.004s,PASSED
+"if (title.equalsIgnoreCase(""Google""))",,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.004s,PASSED
+driver.quit(),,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.214s,PASSED
+"extentTest.log(INFO, ""Browser closed"")",,,,2023-04-21 12:13:05,2023-04-21 12:13:05,0.002s,PASSED
+"com.katalon.plugin.keyword.extentReport.Extent.tearDownTest(driver, extent, extentTest)",,,,2023-04-21 12:13:05,2023-04-21 12:13:06,0.378s,PASSED
+Start listener action : sampleAfterTestCase,,,,2023-04-21 12:13:06,2023-04-21 12:13:06,0.019s,PASSED
